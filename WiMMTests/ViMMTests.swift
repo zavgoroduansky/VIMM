@@ -1,15 +1,15 @@
 //
-//  ViMMTests.swift
-//  ViMMTests
+//  WiMMTests.swift
+//  WiMMTests
 //
 //  Created by Завгородянський Олег on 3/22/18.
 //  Copyright © 2018 Завгородянський Олег. All rights reserved.
 //
 
 import XCTest
-@testable import ViMM
+@testable import WiMM
 
-class ViMMTests: XCTestCase {
+class WiMMTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

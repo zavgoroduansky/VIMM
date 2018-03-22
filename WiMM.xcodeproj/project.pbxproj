@@ -8,13 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FC0424AE2063DA4000F9798E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424AD2063DA4000F9798E /* AppDelegate.swift */; };
-		FC0424B02063DA4000F9798E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424AF2063DA4000F9798E /* ViewController.swift */; };
 		FC0424B32063DA4000F9798E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B12063DA4000F9798E /* Main.storyboard */; };
-		FC0424B62063DA4000F9798E /* ViMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */; };
+		FC0424B62063DA4000F9798E /* WiMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC0424B42063DA4000F9798E /* WiMM.xcdatamodeld */; };
 		FC0424B82063DA4000F9798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B72063DA4000F9798E /* Assets.xcassets */; };
 		FC0424BB2063DA4000F9798E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */; };
 		FC0424C62063DA4000F9798E /* ViMMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424C52063DA4000F9798E /* ViMMTests.swift */; };
 		FC0424D12063DA4000F9798E /* ViMMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424D02063DA4000F9798E /* ViMMUITests.swift */; };
+		FC0424EE2063E20600F9798E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */; };
+		FC0425092063E8D300F9798E /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425062063E8D300F9798E /* UIStoryboard.swift */; };
+		FC04250A2063E8D300F9798E /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425082063E8D300F9798E /* StoryboardLoadable.swift */; };
+		FC0425152063E8F800F9798E /* StartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04250C2063E8F800F9798E /* StartModuleViewController.swift */; };
+		FC0425162063E8F800F9798E /* StartModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04250E2063E8F800F9798E /* StartModuleRouter.swift */; };
+		FC0425172063E8F800F9798E /* StartModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425102063E8F800F9798E /* StartModuleContract.swift */; };
+		FC0425182063E8F800F9798E /* StartModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425122063E8F800F9798E /* StartModulePresenter.swift */; };
+		FC0425192063E8F800F9798E /* StartModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425142063E8F800F9798E /* StartModuleInteractor.swift */; };
+		FC04252F2063EA6500F9798E /* OperationsModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425262063EA6500F9798E /* OperationsModuleContract.swift */; };
+		FC0425302063EA6500F9798E /* OperationsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425282063EA6500F9798E /* OperationsModulePresenter.swift */; };
+		FC0425312063EA6500F9798E /* OperationsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04252A2063EA6500F9798E /* OperationsModuleViewController.swift */; };
+		FC0425322063EA6500F9798E /* OperationsModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04252C2063EA6500F9798E /* OperationsModuleInteractor.swift */; };
+		FC0425332063EA6500F9798E /* OperationsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04252E2063EA6500F9798E /* OperationsModuleRouter.swift */; };
+		FC0425352063F0DC00F9798E /* StartModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0425342063F0DC00F9798E /* StartModule.storyboard */; };
+		FC0425372063F10000F9798E /* OperationsModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0425362063F10000F9798E /* OperationsModule.storyboard */; };
+		FC04253B2063F2C400F9798E /* WalletsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04253A2063F2C400F9798E /* WalletsCollectionViewController.swift */; };
+		FC04253D2063F36700F9798E /* Wallets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC04253C2063F36700F9798E /* Wallets.storyboard */; };
+		FC04253F2063F47D00F9798E /* WalletItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04253E2063F47D00F9798E /* WalletItem.swift */; };
+		FC0425412063F84C00F9798E /* WalletCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425402063F84C00F9798E /* WalletCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +53,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC0424AA2063DA4000F9798E /* ViMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424AA2063DA4000F9798E /* WiMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0424AD2063DA4000F9798E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC0424AF2063DA4000F9798E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC0424B22063DA4000F9798E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViMM.xcdatamodel; sourceTree = "<group>"; };
 		FC0424B72063DA4000F9798E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC0424BA2063DA4000F9798E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC0424BC2063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC0424C12063DA4000F9798E /* ViMMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViMMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424C12063DA4000F9798E /* WiMMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiMMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0424C52063DA4000F9798E /* ViMMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViMMTests.swift; sourceTree = "<group>"; };
 		FC0424C72063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViMMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424CC2063DA4000F9798E /* WiMMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiMMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0424D02063DA4000F9798E /* ViMMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViMMUITests.swift; sourceTree = "<group>"; };
 		FC0424D22063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FC0425062063E8D300F9798E /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		FC0425082063E8D300F9798E /* StoryboardLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		FC04250C2063E8F800F9798E /* StartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleViewController.swift; sourceTree = "<group>"; };
+		FC04250E2063E8F800F9798E /* StartModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleRouter.swift; sourceTree = "<group>"; };
+		FC0425102063E8F800F9798E /* StartModuleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleContract.swift; sourceTree = "<group>"; };
+		FC0425122063E8F800F9798E /* StartModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModulePresenter.swift; sourceTree = "<group>"; };
+		FC0425142063E8F800F9798E /* StartModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleInteractor.swift; sourceTree = "<group>"; };
+		FC0425262063EA6500F9798E /* OperationsModuleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleContract.swift; sourceTree = "<group>"; };
+		FC0425282063EA6500F9798E /* OperationsModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModulePresenter.swift; sourceTree = "<group>"; };
+		FC04252A2063EA6500F9798E /* OperationsModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleViewController.swift; sourceTree = "<group>"; };
+		FC04252C2063EA6500F9798E /* OperationsModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleInteractor.swift; sourceTree = "<group>"; };
+		FC04252E2063EA6500F9798E /* OperationsModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleRouter.swift; sourceTree = "<group>"; };
+		FC0425342063F0DC00F9798E /* StartModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartModule.storyboard; sourceTree = "<group>"; };
+		FC0425362063F10000F9798E /* OperationsModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationsModule.storyboard; sourceTree = "<group>"; };
+		FC04253A2063F2C400F9798E /* WalletsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsCollectionViewController.swift; sourceTree = "<group>"; };
+		FC04253C2063F36700F9798E /* Wallets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallets.storyboard; sourceTree = "<group>"; };
+		FC04253E2063F47D00F9798E /* WalletItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletItem.swift; sourceTree = "<group>"; };
+		FC0425402063F84C00F9798E /* WalletCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +115,9 @@
 		FC0424A12063DA4000F9798E = {
 			isa = PBXGroup;
 			children = (
-				FC0424AC2063DA4000F9798E /* ViMM */,
-				FC0424C42063DA4000F9798E /* ViMMTests */,
-				FC0424CF2063DA4000F9798E /* ViMMUITests */,
+				FC0424AC2063DA4000F9798E /* WiMM */,
+				FC0424C42063DA4000F9798E /* WiMMTests */,
+				FC0424CF2063DA4000F9798E /* WiMMUITests */,
 				FC0424AB2063DA4000F9798E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +125,197 @@
 		FC0424AB2063DA4000F9798E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC0424AA2063DA4000F9798E /* ViMM.app */,
-				FC0424C12063DA4000F9798E /* ViMMTests.xctest */,
-				FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */,
+				FC0424AA2063DA4000F9798E /* WiMM.app */,
+				FC0424C12063DA4000F9798E /* WiMMTests.xctest */,
+				FC0424CC2063DA4000F9798E /* WiMMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC0424AC2063DA4000F9798E /* ViMM */ = {
+		FC0424AC2063DA4000F9798E /* WiMM */ = {
 			isa = PBXGroup;
 			children = (
-				FC0424AD2063DA4000F9798E /* AppDelegate.swift */,
-				FC0424AF2063DA4000F9798E /* ViewController.swift */,
-				FC0424B12063DA4000F9798E /* Main.storyboard */,
-				FC0424B72063DA4000F9798E /* Assets.xcassets */,
-				FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */,
+				FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */,
+				FC0425392063F29100F9798E /* Wallets */,
+				FC0425382063F1DB00F9798E /* Rerources */,
+				FC0425052063E8D300F9798E /* Extensions */,
+				FC0425072063E8D300F9798E /* ProtocolExtensions */,
+				FC0424E22063DD3A00F9798E /* StartModule */,
+				FC0425242063EA6500F9798E /* OperationsModule */,
 				FC0424BC2063DA4000F9798E /* Info.plist */,
-				FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */,
+				FC0424B42063DA4000F9798E /* WiMM.xcdatamodeld */,
 			);
-			path = ViMM;
+			path = WiMM;
 			sourceTree = "<group>";
 		};
-		FC0424C42063DA4000F9798E /* ViMMTests */ = {
+		FC0424C42063DA4000F9798E /* WiMMTests */ = {
 			isa = PBXGroup;
 			children = (
 				FC0424C52063DA4000F9798E /* ViMMTests.swift */,
 				FC0424C72063DA4000F9798E /* Info.plist */,
 			);
-			path = ViMMTests;
+			path = WiMMTests;
 			sourceTree = "<group>";
 		};
-		FC0424CF2063DA4000F9798E /* ViMMUITests */ = {
+		FC0424CF2063DA4000F9798E /* WiMMUITests */ = {
 			isa = PBXGroup;
 			children = (
 				FC0424D02063DA4000F9798E /* ViMMUITests.swift */,
 				FC0424D22063DA4000F9798E /* Info.plist */,
 			);
-			path = ViMMUITests;
+			path = WiMMUITests;
+			sourceTree = "<group>";
+		};
+		FC0424E22063DD3A00F9798E /* StartModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC04250F2063E8F800F9798E /* Contract */,
+				FC0425132063E8F800F9798E /* Interactor */,
+				FC0425112063E8F800F9798E /* Presenter */,
+				FC04250D2063E8F800F9798E /* Router */,
+				FC04250B2063E8F800F9798E /* View */,
+				FC0425342063F0DC00F9798E /* StartModule.storyboard */,
+			);
+			path = StartModule;
+			sourceTree = "<group>";
+		};
+		FC0425052063E8D300F9798E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425062063E8D300F9798E /* UIStoryboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC0425072063E8D300F9798E /* ProtocolExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425082063E8D300F9798E /* StoryboardLoadable.swift */,
+			);
+			path = ProtocolExtensions;
+			sourceTree = "<group>";
+		};
+		FC04250B2063E8F800F9798E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC04250C2063E8F800F9798E /* StartModuleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC04250D2063E8F800F9798E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC04250E2063E8F800F9798E /* StartModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FC04250F2063E8F800F9798E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425102063E8F800F9798E /* StartModuleContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		FC0425112063E8F800F9798E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425122063E8F800F9798E /* StartModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC0425132063E8F800F9798E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425142063E8F800F9798E /* StartModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC0425242063EA6500F9798E /* OperationsModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425252063EA6500F9798E /* Contract */,
+				FC0425272063EA6500F9798E /* Presenter */,
+				FC0425292063EA6500F9798E /* View */,
+				FC04252B2063EA6500F9798E /* Interactor */,
+				FC04252D2063EA6500F9798E /* Router */,
+				FC0425362063F10000F9798E /* OperationsModule.storyboard */,
+			);
+			path = OperationsModule;
+			sourceTree = "<group>";
+		};
+		FC0425252063EA6500F9798E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425262063EA6500F9798E /* OperationsModuleContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		FC0425272063EA6500F9798E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC0425282063EA6500F9798E /* OperationsModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC0425292063EA6500F9798E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC04252A2063EA6500F9798E /* OperationsModuleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC04252B2063EA6500F9798E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC04252C2063EA6500F9798E /* OperationsModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC04252D2063EA6500F9798E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC04252E2063EA6500F9798E /* OperationsModuleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FC0425382063F1DB00F9798E /* Rerources */ = {
+			isa = PBXGroup;
+			children = (
+				FC0424AD2063DA4000F9798E /* AppDelegate.swift */,
+				FC0424B12063DA4000F9798E /* Main.storyboard */,
+				FC0424B72063DA4000F9798E /* Assets.xcassets */,
+				FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */,
+			);
+			path = Rerources;
+			sourceTree = "<group>";
+		};
+		FC0425392063F29100F9798E /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
+				FC04253A2063F2C400F9798E /* WalletsCollectionViewController.swift */,
+				FC04253E2063F47D00F9798E /* WalletItem.swift */,
+				FC04253C2063F36700F9798E /* Wallets.storyboard */,
+				FC0425402063F84C00F9798E /* WalletCollectionViewCell.swift */,
+			);
+			path = Wallets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC0424A92063DA4000F9798E /* ViMM */ = {
+		FC0424A92063DA4000F9798E /* WiMM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMM" */;
+			buildConfigurationList = FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMM" */;
 			buildPhases = (
 				FC0424A62063DA4000F9798E /* Sources */,
 				FC0424A72063DA4000F9798E /* Frameworks */,
@@ -143,14 +325,14 @@
 			);
 			dependencies = (
 			);
-			name = ViMM;
+			name = WiMM;
 			productName = ViMM;
-			productReference = FC0424AA2063DA4000F9798E /* ViMM.app */;
+			productReference = FC0424AA2063DA4000F9798E /* WiMM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FC0424C02063DA4000F9798E /* ViMMTests */ = {
+		FC0424C02063DA4000F9798E /* WiMMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMTests" */;
+			buildConfigurationList = FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMMTests" */;
 			buildPhases = (
 				FC0424BD2063DA4000F9798E /* Sources */,
 				FC0424BE2063DA4000F9798E /* Frameworks */,
@@ -161,14 +343,14 @@
 			dependencies = (
 				FC0424C32063DA4000F9798E /* PBXTargetDependency */,
 			);
-			name = ViMMTests;
+			name = WiMMTests;
 			productName = ViMMTests;
-			productReference = FC0424C12063DA4000F9798E /* ViMMTests.xctest */;
+			productReference = FC0424C12063DA4000F9798E /* WiMMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FC0424CB2063DA4000F9798E /* ViMMUITests */ = {
+		FC0424CB2063DA4000F9798E /* WiMMUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMUITests" */;
+			buildConfigurationList = FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMMUITests" */;
 			buildPhases = (
 				FC0424C82063DA4000F9798E /* Sources */,
 				FC0424C92063DA4000F9798E /* Frameworks */,
@@ -179,9 +361,9 @@
 			dependencies = (
 				FC0424CE2063DA4000F9798E /* PBXTargetDependency */,
 			);
-			name = ViMMUITests;
+			name = WiMMUITests;
 			productName = ViMMUITests;
-			productReference = FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */;
+			productReference = FC0424CC2063DA4000F9798E /* WiMMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +392,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "ViMM" */;
+			buildConfigurationList = FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "WiMM" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +405,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC0424A92063DA4000F9798E /* ViMM */,
-				FC0424C02063DA4000F9798E /* ViMMTests */,
-				FC0424CB2063DA4000F9798E /* ViMMUITests */,
+				FC0424A92063DA4000F9798E /* WiMM */,
+				FC0424C02063DA4000F9798E /* WiMMTests */,
+				FC0424CB2063DA4000F9798E /* WiMMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,9 +417,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0425372063F10000F9798E /* OperationsModule.storyboard in Resources */,
 				FC0424BB2063DA4000F9798E /* LaunchScreen.storyboard in Resources */,
+				FC0425352063F0DC00F9798E /* StartModule.storyboard in Resources */,
 				FC0424B82063DA4000F9798E /* Assets.xcassets in Resources */,
 				FC0424B32063DA4000F9798E /* Main.storyboard in Resources */,
+				FC04253D2063F36700F9798E /* Wallets.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +447,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC0424B02063DA4000F9798E /* ViewController.swift in Sources */,
-				FC0424B62063DA4000F9798E /* ViMM.xcdatamodeld in Sources */,
+				FC0425332063EA6500F9798E /* OperationsModuleRouter.swift in Sources */,
+				FC0425322063EA6500F9798E /* OperationsModuleInteractor.swift in Sources */,
+				FC04253F2063F47D00F9798E /* WalletItem.swift in Sources */,
+				FC04252F2063EA6500F9798E /* OperationsModuleContract.swift in Sources */,
+				FC0425312063EA6500F9798E /* OperationsModuleViewController.swift in Sources */,
+				FC0425092063E8D300F9798E /* UIStoryboard.swift in Sources */,
+				FC0425152063E8F800F9798E /* StartModuleViewController.swift in Sources */,
+				FC04250A2063E8D300F9798E /* StoryboardLoadable.swift in Sources */,
+				FC04253B2063F2C400F9798E /* WalletsCollectionViewController.swift in Sources */,
+				FC0425302063EA6500F9798E /* OperationsModulePresenter.swift in Sources */,
+				FC0424EE2063E20600F9798E /* MainTabBarViewController.swift in Sources */,
+				FC0425182063E8F800F9798E /* StartModulePresenter.swift in Sources */,
+				FC0424B62063DA4000F9798E /* WiMM.xcdatamodeld in Sources */,
 				FC0424AE2063DA4000F9798E /* AppDelegate.swift in Sources */,
+				FC0425192063E8F800F9798E /* StartModuleInteractor.swift in Sources */,
+				FC0425172063E8F800F9798E /* StartModuleContract.swift in Sources */,
+				FC0425162063E8F800F9798E /* StartModuleRouter.swift in Sources */,
+				FC0425412063F84C00F9798E /* WalletCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +489,12 @@
 /* Begin PBXTargetDependency section */
 		FC0424C32063DA4000F9798E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC0424A92063DA4000F9798E /* ViMM */;
+			target = FC0424A92063DA4000F9798E /* WiMM */;
 			targetProxy = FC0424C22063DA4000F9798E /* PBXContainerItemProxy */;
 		};
 		FC0424CE2063DA4000F9798E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC0424A92063DA4000F9798E /* ViMM */;
+			target = FC0424A92063DA4000F9798E /* WiMM */;
 			targetProxy = FC0424CD2063DA4000F9798E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,9 +631,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMM/Info.plist;
+				INFOPLIST_FILE = WiMM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMM;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,9 +645,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMM/Info.plist;
+				INFOPLIST_FILE = WiMM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMM;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,13 +660,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMMTests/Info.plist;
+				INFOPLIST_FILE = WiMMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMTests;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViMM.app/ViMM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiMM.app/WiMM";
 			};
 			name = Debug;
 		};
@@ -476,13 +676,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMMTests/Info.plist;
+				INFOPLIST_FILE = WiMMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMTests;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViMM.app/ViMM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiMM.app/WiMM";
 			};
 			name = Release;
 		};
@@ -491,13 +691,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMMUITests/Info.plist;
+				INFOPLIST_FILE = WiMMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViMM;
+				TEST_TARGET_NAME = WiMM;
 			};
 			name = Debug;
 		};
@@ -506,20 +706,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViMMUITests/Info.plist;
+				INFOPLIST_FILE = WiMMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.WiMMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViMM;
+				TEST_TARGET_NAME = WiMM;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "ViMM" */ = {
+		FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "WiMM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC0424D32063DA4000F9798E /* Debug */,
@@ -528,7 +728,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMM" */ = {
+		FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC0424D62063DA4000F9798E /* Debug */,
@@ -537,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMTests" */ = {
+		FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC0424D92063DA4000F9798E /* Debug */,
@@ -546,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMUITests" */ = {
+		FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "WiMMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC0424DC2063DA4000F9798E /* Debug */,
@@ -558,13 +758,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */ = {
+		FC0424B42063DA4000F9798E /* WiMM.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */,
 			);
 			currentVersion = FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */;
-			path = ViMM.xcdatamodeld;
+			path = WiMM.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

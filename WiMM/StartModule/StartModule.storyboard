@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start-->
+        <scene sceneID="xVM-fG-buX">
+            <objects>
+                <viewController storyboardIdentifier="StartModuleViewController" id="sH2-3X-PaE" customClass="StartModuleViewController" customModule="ViMM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwR-Ct-Ani">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-pA-yh0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JRo-og-RBF"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="iv8-IX-y0C" kind="embed" id="i3F-eL-9on"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="RXY-pA-yh0" firstAttribute="trailing" secondItem="9AB-ZN-VAm" secondAttribute="trailing" id="6wc-KO-qhU"/>
+                            <constraint firstItem="RXY-pA-yh0" firstAttribute="top" secondItem="9AB-ZN-VAm" secondAttribute="top" id="Fh7-ZJ-qir"/>
+                            <constraint firstItem="RXY-pA-yh0" firstAttribute="leading" secondItem="9AB-ZN-VAm" secondAttribute="leading" id="kXq-bB-Klz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9AB-ZN-VAm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Start" id="WX4-y1-LSK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djz-aP-kfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557.60000000000002" y="107.49625187406298"/>
+        </scene>
+        <!--WalletsCollectionViewController-->
+        <scene sceneID="4wD-eG-SLU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Wallets" referencedIdentifier="WalletsCollectionViewController" id="iv8-IX-y0C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMt-au-5NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="-331"/>
+        </scene>
+    </scenes>
+</document>

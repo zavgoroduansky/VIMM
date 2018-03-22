@@ -1,6 +1,6 @@
 //
-//  ViMMUITests.swift
-//  ViMMUITests
+//  WiMMUITests.swift
+//  WiMMUITests
 //
 //  Created by Завгородянський Олег on 3/22/18.
 //  Copyright © 2018 Завгородянський Олег. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ViMMUITests: XCTestCase {
+class WiMMUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
