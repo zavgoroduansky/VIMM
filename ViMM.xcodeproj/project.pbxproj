@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC0424AE2063DA4000F9798E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424AD2063DA4000F9798E /* AppDelegate.swift */; };
+		FC0424B02063DA4000F9798E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424AF2063DA4000F9798E /* ViewController.swift */; };
+		FC0424B32063DA4000F9798E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B12063DA4000F9798E /* Main.storyboard */; };
+		FC0424B62063DA4000F9798E /* ViMM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */; };
+		FC0424B82063DA4000F9798E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B72063DA4000F9798E /* Assets.xcassets */; };
+		FC0424BB2063DA4000F9798E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */; };
+		FC0424C62063DA4000F9798E /* ViMMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424C52063DA4000F9798E /* ViMMTests.swift */; };
+		FC0424D12063DA4000F9798E /* ViMMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424D02063DA4000F9798E /* ViMMUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC0424C22063DA4000F9798E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC0424A22063DA4000F9798E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC0424A92063DA4000F9798E;
+			remoteInfo = ViMM;
+		};
+		FC0424CD2063DA4000F9798E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC0424A22063DA4000F9798E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC0424A92063DA4000F9798E;
+			remoteInfo = ViMM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC0424AA2063DA4000F9798E /* ViMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424AD2063DA4000F9798E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC0424AF2063DA4000F9798E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC0424B22063DA4000F9798E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViMM.xcdatamodel; sourceTree = "<group>"; };
+		FC0424B72063DA4000F9798E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC0424BA2063DA4000F9798E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC0424BC2063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0424C12063DA4000F9798E /* ViMMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViMMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424C52063DA4000F9798E /* ViMMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViMMTests.swift; sourceTree = "<group>"; };
+		FC0424C72063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViMMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0424D02063DA4000F9798E /* ViMMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViMMUITests.swift; sourceTree = "<group>"; };
+		FC0424D22063DA4000F9798E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC0424A72063DA4000F9798E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424BE2063DA4000F9798E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424C92063DA4000F9798E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC0424A12063DA4000F9798E = {
+			isa = PBXGroup;
+			children = (
+				FC0424AC2063DA4000F9798E /* ViMM */,
+				FC0424C42063DA4000F9798E /* ViMMTests */,
+				FC0424CF2063DA4000F9798E /* ViMMUITests */,
+				FC0424AB2063DA4000F9798E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC0424AB2063DA4000F9798E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC0424AA2063DA4000F9798E /* ViMM.app */,
+				FC0424C12063DA4000F9798E /* ViMMTests.xctest */,
+				FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0424AC2063DA4000F9798E /* ViMM */ = {
+			isa = PBXGroup;
+			children = (
+				FC0424AD2063DA4000F9798E /* AppDelegate.swift */,
+				FC0424AF2063DA4000F9798E /* ViewController.swift */,
+				FC0424B12063DA4000F9798E /* Main.storyboard */,
+				FC0424B72063DA4000F9798E /* Assets.xcassets */,
+				FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */,
+				FC0424BC2063DA4000F9798E /* Info.plist */,
+				FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */,
+			);
+			path = ViMM;
+			sourceTree = "<group>";
+		};
+		FC0424C42063DA4000F9798E /* ViMMTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC0424C52063DA4000F9798E /* ViMMTests.swift */,
+				FC0424C72063DA4000F9798E /* Info.plist */,
+			);
+			path = ViMMTests;
+			sourceTree = "<group>";
+		};
+		FC0424CF2063DA4000F9798E /* ViMMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC0424D02063DA4000F9798E /* ViMMUITests.swift */,
+				FC0424D22063DA4000F9798E /* Info.plist */,
+			);
+			path = ViMMUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC0424A92063DA4000F9798E /* ViMM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMM" */;
+			buildPhases = (
+				FC0424A62063DA4000F9798E /* Sources */,
+				FC0424A72063DA4000F9798E /* Frameworks */,
+				FC0424A82063DA4000F9798E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViMM;
+			productName = ViMM;
+			productReference = FC0424AA2063DA4000F9798E /* ViMM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC0424C02063DA4000F9798E /* ViMMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMTests" */;
+			buildPhases = (
+				FC0424BD2063DA4000F9798E /* Sources */,
+				FC0424BE2063DA4000F9798E /* Frameworks */,
+				FC0424BF2063DA4000F9798E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC0424C32063DA4000F9798E /* PBXTargetDependency */,
+			);
+			name = ViMMTests;
+			productName = ViMMTests;
+			productReference = FC0424C12063DA4000F9798E /* ViMMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC0424CB2063DA4000F9798E /* ViMMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMUITests" */;
+			buildPhases = (
+				FC0424C82063DA4000F9798E /* Sources */,
+				FC0424C92063DA4000F9798E /* Frameworks */,
+				FC0424CA2063DA4000F9798E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC0424CE2063DA4000F9798E /* PBXTargetDependency */,
+			);
+			name = ViMMUITests;
+			productName = ViMMUITests;
+			productReference = FC0424CC2063DA4000F9798E /* ViMMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC0424A22063DA4000F9798E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Завгородянський Олег";
+				TargetAttributes = {
+					FC0424A92063DA4000F9798E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FC0424C02063DA4000F9798E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC0424A92063DA4000F9798E;
+					};
+					FC0424CB2063DA4000F9798E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC0424A92063DA4000F9798E;
+					};
+				};
+			};
+			buildConfigurationList = FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "ViMM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC0424A12063DA4000F9798E;
+			productRefGroup = FC0424AB2063DA4000F9798E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC0424A92063DA4000F9798E /* ViMM */,
+				FC0424C02063DA4000F9798E /* ViMMTests */,
+				FC0424CB2063DA4000F9798E /* ViMMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC0424A82063DA4000F9798E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0424BB2063DA4000F9798E /* LaunchScreen.storyboard in Resources */,
+				FC0424B82063DA4000F9798E /* Assets.xcassets in Resources */,
+				FC0424B32063DA4000F9798E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424BF2063DA4000F9798E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424CA2063DA4000F9798E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC0424A62063DA4000F9798E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0424B02063DA4000F9798E /* ViewController.swift in Sources */,
+				FC0424B62063DA4000F9798E /* ViMM.xcdatamodeld in Sources */,
+				FC0424AE2063DA4000F9798E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424BD2063DA4000F9798E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0424C62063DA4000F9798E /* ViMMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0424C82063DA4000F9798E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0424D12063DA4000F9798E /* ViMMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC0424C32063DA4000F9798E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC0424A92063DA4000F9798E /* ViMM */;
+			targetProxy = FC0424C22063DA4000F9798E /* PBXContainerItemProxy */;
+		};
+		FC0424CE2063DA4000F9798E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC0424A92063DA4000F9798E /* ViMM */;
+			targetProxy = FC0424CD2063DA4000F9798E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC0424B12063DA4000F9798E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC0424B22063DA4000F9798E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC0424B92063DA4000F9798E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC0424BA2063DA4000F9798E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC0424D32063DA4000F9798E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC0424D42063DA4000F9798E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC0424D62063DA4000F9798E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC0424D72063DA4000F9798E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC0424D92063DA4000F9798E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViMM.app/ViMM";
+			};
+			name = Debug;
+		};
+		FC0424DA2063DA4000F9798E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViMM.app/ViMM";
+			};
+			name = Release;
+		};
+		FC0424DC2063DA4000F9798E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViMM;
+			};
+			name = Debug;
+		};
+		FC0424DD2063DA4000F9798E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViMMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.ViMMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViMM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC0424A52063DA4000F9798E /* Build configuration list for PBXProject "ViMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0424D32063DA4000F9798E /* Debug */,
+				FC0424D42063DA4000F9798E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC0424D52063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0424D62063DA4000F9798E /* Debug */,
+				FC0424D72063DA4000F9798E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC0424D82063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0424D92063DA4000F9798E /* Debug */,
+				FC0424DA2063DA4000F9798E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC0424DB2063DA4000F9798E /* Build configuration list for PBXNativeTarget "ViMMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0424DC2063DA4000F9798E /* Debug */,
+				FC0424DD2063DA4000F9798E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC0424B42063DA4000F9798E /* ViMM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */,
+			);
+			currentVersion = FC0424B52063DA4000F9798E /* ViMM.xcdatamodel */;
+			path = ViMM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC0424A22063DA4000F9798E /* Project object */;
+}
