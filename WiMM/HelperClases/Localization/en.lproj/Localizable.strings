@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  WiMM
+
+  Created by Завгородянський Олег on 4/26/18.
+  Copyright © 2018 Завгородянський Олег. All rights reserved.
+*/
+
+"OperationsTitle" = "Operations";
+"SettingsTitle" = "Settings";
+"WalletsCellName" = "Wallets";
+"WalletsCellDescription" = "Your personal wallets";
+"CurrenciesCellName" = "Currencies";
+"CurrenciesCellDescription" = "Available currencies";
+"NewWalletTitle" = "New wallet";
+"NewWalletNameDescriptionText" = "This is a name for your new wallet. The name should be unic between wallets already created.";
+"NewWalletNameUnicError" = "Selected name is not unic. Please, enter valid wallet name";
+"CloseButtonTitle" = "Close";
+"NewWalletCurrencyDescriptionText" = "You can make transactions only with selected currency. System is not convert currency rate automatically";

@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "9DJ-8e-NFq"; */
+"9DJ-8e-NFq.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "->"; ObjectID = "SIm-3O-mRD"; */
+"SIm-3O-mRD.normalTitle" = "->";
+
+/* Class = "UITabBarItem"; title = "Operations"; ObjectID = "UGJ-nM-R7b"; */
+"UGJ-nM-R7b.title" = "Операції";
+
+/* Class = "UITabBarItem"; title = "Operations"; ObjectID = "WX4-y1-LSK"; */
+"WX4-y1-LSK.title" = "Операції";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "XkK-Rd-cCQ"; */
+"XkK-Rd-cCQ.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "1.00"; ObjectID = "eYr-a2-cXA"; */
+"eYr-a2-cXA.text" = "1.00";
+
+/* Class = "UIButton"; normalTitle = "?"; ObjectID = "jdw-jU-d96"; */
+"jdw-jU-d96.normalTitle" = "?";
+
+/* Class = "UINavigationItem"; title = "Operations"; ObjectID = "qRZ-zP-eeE"; */
+"qRZ-zP-eeE.title" = "Операції";

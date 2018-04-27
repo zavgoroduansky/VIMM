@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "TOe-0z-Muo"; */
+"TOe-0z-Muo.title" = "Налаштування";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "b9t-QR-67H"; */
+"b9t-QR-67H.title" = "Налаштування";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "iyo-TK-tsP"; */
+"iyo-TK-tsP.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "qgG-Oa-ot8"; */
+"qgG-Oa-ot8.text" = "Detail";

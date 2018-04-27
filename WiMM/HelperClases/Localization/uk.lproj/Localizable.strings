@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  WiMM
+
+  Created by Завгородянський Олег on 4/26/18.
+  Copyright © 2018 Завгородянський Олег. All rights reserved.
+*/
+
+"OperationsTitle" = "Операції";
+"SettingsTitle" = "Налаштування";
+"WalletsCellName" = "Гаманці";
+"WalletsCellDescription" = "Ваші персональні гаманці";
+"CurrenciesCellName" = "Валюти";
+"CurrenciesCellDescription" = "Доступні валюти";
+"NewWalletTitle" = "Новий гаманець";
+"NewWalletNameDescriptionText" = "Це назва вашого нового гаманця. Назва має бути уникальною між всіма вже створенними гаманцями.";
+"NewWalletNameUnicError" = "Вибране ім'я гаманця не унікальне. Вкажіть ім'я яке-б задовольняло правило унікальності назв гаманців.";
+"CloseButtonTitle" = "Закрити";
+"NewWalletCurrencyDescriptionText" = "Ви можете виконувати транзакції тільки у вибраній валюті. Система не конвертує валюти автоматично";

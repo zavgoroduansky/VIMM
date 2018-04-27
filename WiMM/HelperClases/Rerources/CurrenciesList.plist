@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UAH</key>
+	<dict>
+		<key>shortName</key>
+		<string>UAH</string>
+		<key>name</key>
+		<string>Ukraine hryvna</string>
+		<key>code</key>
+		<integer>980</integer>
+	</dict>
+	<key>USD</key>
+	<dict>
+		<key>shortName</key>
+		<string>USD</string>
+		<key>name</key>
+		<string>USA Dollar</string>
+		<key>code</key>
+		<integer>840</integer>
+	</dict>
+</dict>
+</plist>

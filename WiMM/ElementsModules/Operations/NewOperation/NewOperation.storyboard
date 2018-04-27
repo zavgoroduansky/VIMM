@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aw9-rN-ZcM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IhM-6i-4IX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XsI-oh-fJF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4OX-Yv-KgL">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aw9-rN-ZcM" kind="relationship" relationship="rootViewController" id="o0D-ur-nBx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OK-o4-uu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="-152"/>
+        </scene>
+        <!--New Operation Table View Controller-->
+        <scene sceneID="jIt-K4-xwU">
+            <objects>
+                <tableViewController storyboardIdentifier="NewOperationTableViewController" id="Aw9-rN-ZcM" customClass="NewOperationTableViewController" customModule="WiMM" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tIa-JX-3ed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Aw9-rN-ZcM" id="Dwp-7G-DjM"/>
+                            <outlet property="delegate" destination="Aw9-rN-ZcM" id="vke-nS-9C0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="YhJ-ks-Li1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3R-fW-xnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="-152"/>
+        </scene>
+    </scenes>
+</document>
