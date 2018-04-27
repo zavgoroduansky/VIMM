@@ -40,8 +40,16 @@ extension NewWalletPresenter: NewWalletPresentation {
         view?.newWalletNameSelected(name)
     }
     
+    func saveNewWalletCurrency(_ currency: CurrencyModel) {
+        view?.newWalletCurrencySelected(currency)
+    }
+    
     func goNextFrom(viewController: UIViewController) {
         view?.goNextFrom(viewController: viewController)
+    }
+    
+    func currencyList() {
+        interactor?.currencyList()
     }
 }
 
@@ -53,5 +61,9 @@ extension NewWalletPresenter: NewWalletInteractorOutput {
         } else {
             nameView?.newWalletNameCheckSuccess()
         }
+    }
+    
+    func onCurrencyList(_ list: [CurrencyModel]) {
+        currencyView?.onCurrencyList(list)
     }
 }

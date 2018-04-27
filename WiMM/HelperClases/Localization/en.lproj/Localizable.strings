@@ -17,3 +17,6 @@
 "NewWalletNameUnicError" = "Selected name is not unic. Please, enter valid wallet name";
 "CloseButtonTitle" = "Close";
 "NewWalletCurrencyDescriptionText" = "You can make transactions only with selected currency. System is not convert currency rate automatically";
+"NewWalletCurrencyButtonText" = "Select currency";
+"NewWalletCurrencySelectTitle" = "Currency";
+"NewWalletCurrencySelectDescription" = "Please select new wallet currency";

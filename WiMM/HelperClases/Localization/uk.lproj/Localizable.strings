@@ -17,3 +17,6 @@
 "NewWalletNameUnicError" = "Вибране ім'я гаманця не унікальне. Вкажіть ім'я яке-б задовольняло правило унікальності назв гаманців.";
 "CloseButtonTitle" = "Закрити";
 "NewWalletCurrencyDescriptionText" = "Ви можете виконувати транзакції тільки у вибраній валюті. Система не конвертує валюти автоматично";
+"NewWalletCurrencyButtonText" = "Виберіть валюту";
+"NewWalletCurrencySelectTitle" = "Валюта";
+"NewWalletCurrencySelectDescription" = "Будь-ласка виберіть валюту нового гаманця";

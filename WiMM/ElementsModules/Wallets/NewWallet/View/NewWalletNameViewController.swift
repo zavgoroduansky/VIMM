@@ -54,6 +54,9 @@ class NewWalletNameViewController: UIViewController {
         // navigation
         parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Navigation.rightButtonTitle, style: .plain, target: self, action: #selector(rightNavigationBarButtonAction))
         
+        // text field
+        nameTextField.font = Constants.Fonts.selectedText
+        
         // description
         descriptionLabel.text = NSLocalizedString("NewWalletNameDescriptionText", comment: "")
         descriptionLabel.font = Constants.Fonts.infoText

@@ -21,6 +21,7 @@ struct Constants {
     }
     struct Fonts {
         static let infoText = UIFont.systemFont(ofSize: 15.0)
+        static let selectedText = UIFont.boldSystemFont(ofSize: 16.0)
     }
     struct Colors {
         static let infoText = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1)

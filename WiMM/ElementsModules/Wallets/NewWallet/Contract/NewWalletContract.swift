@@ -17,6 +17,7 @@ protocol NewWalletNameDelegate: class {
 
 protocol NewWalletCurrencyDelegate: class {
     
+    func onCurrencyList(_ list: [CurrencyModel])
 }
 
 protocol NewWalletCategoriesDelegate: class {
@@ -37,17 +38,21 @@ protocol NewWalletPresentation: class {
     func subViewControllers()
     func checkNewWalletName(_ name: String)
     func saveNewWalletName(_ name: String)
+    func saveNewWalletCurrency(_ currency: CurrencyModel)
     func goNextFrom(viewController: UIViewController)
+    func currencyList()
 }
 
 protocol NewWalletUseCase: class {
     
     func checkNewWalletName(_ name: String)
+    func currencyList()
 }
 
 protocol NewWalletInteractorOutput: class {
     
     func onCheckNewWalletName(_ errorString: String?)
+    func onCurrencyList(_ list: [CurrencyModel])
 }
 
 protocol NewWalletWireframe: class {

@@ -27,4 +27,8 @@ extension NewWalletInteractor: NewWalletUseCase {
             output?.onCheckNewWalletName(errorString)
         }
     }
+    
+    func currencyList() {
+        output?.onCurrencyList(CurrencyService.fetchAllCurrencies())
+    }
 }

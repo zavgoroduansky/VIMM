@@ -67,7 +67,7 @@ extension NewWalletViewController: NewWalletView {
     }
     
     func newWalletCurrencySelected(_ currency: CurrencyModel) {
-        
+        newWallet.currency = currency
     }
     
     func newWalletCategoriesSelected(_ categories: [CategoryModel]) {
