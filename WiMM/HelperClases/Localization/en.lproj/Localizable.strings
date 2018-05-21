@@ -20,3 +20,10 @@
 "NewWalletCurrencyButtonText" = "Select currency";
 "NewWalletCurrencySelectTitle" = "Currency";
 "NewWalletCurrencySelectDescription" = "Please select new wallet currency";
+"CategoriesListTitle" = "Categories";
+"NewStringActionCellTitle" = "Add new";
+"NextButtonTitle" = "Next";
+"DoneButtonTitle" = "Done";
+"CategoryCreationAlertTitle" = "New category";
+"CategoryCreationAlertDescription" = "Enter category name";
+"Name" = "Name";

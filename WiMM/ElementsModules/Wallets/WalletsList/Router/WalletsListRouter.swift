@@ -17,8 +17,8 @@ class WalletsListRouter {
 
     // MARK: Static methods
 
-    static func setupModule() -> WalletsListViewController {
-        let viewController = UIStoryboard.loadViewController() as WalletsListViewController
+    static func setupModule() -> WalletsListTableViewController {
+        let viewController = UIStoryboard.loadViewController() as WalletsListTableViewController
         let presenter = WalletsListPresenter()
         let router = WalletsListRouter()
         let interactor = WalletsListInteractor()

@@ -15,7 +15,6 @@ class MainTabBarViewController: UITabBarController {
         
         // add view controllers to main tab
         var mainViewControllers = [UIViewController]()
-        //mainViewControllers.append(OperationsModuleRouter.setupModule())
         mainViewControllers.append(StartModuleRouter.setupModule())
         mainViewControllers.append(SettingsRouter.setupModule())
         

@@ -20,3 +20,10 @@
 "NewWalletCurrencyButtonText" = "Виберіть валюту";
 "NewWalletCurrencySelectTitle" = "Валюта";
 "NewWalletCurrencySelectDescription" = "Будь-ласка виберіть валюту нового гаманця";
+"CategoriesListTitle" = "Категорії";
+"NewStringActionCellTitle" = "Додати";
+"NextButtonTitle" = "Далі";
+"DoneButtonTitle" = "Готово";
+"CategoryCreationAlertTitle" = "Нова категорія";
+"CategoryCreationAlertDescription" = "Введіть назву категорії";
+"Name" = "Назва";

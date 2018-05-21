@@ -20,9 +20,21 @@ class NewWalletPresenter {
     weak var nameView: NewWalletNameDelegate?
     weak var currencyView: NewWalletCurrencyDelegate?
     weak var categoryView: NewWalletCategoriesDelegate?
+    
+    lazy var newWallet = WalletModel(id: nil, name: "Default", currency: nil, categories: nil)
 }
 
 extension NewWalletPresenter: NewWalletPresentation {
+    
+    func nextButtonPressedOnViewControllerWith(index: Int) {
+        if nameView?.controllerIndex() == index {
+            nameView?.nextButtonPressed()
+        } else if currencyView?.controllerIndex() == index {
+            currencyView?.nextButtonPressed()
+        } else if categoryView?.controllerIndex() == index {
+            categoryView?.nextButtonPressed()
+        }
+    }
     
     func subViewControllers() {
         if let array = router?.subViewControllers() {
@@ -37,19 +49,23 @@ extension NewWalletPresenter: NewWalletPresentation {
     }
     
     func saveNewWalletName(_ name: String) {
-        view?.newWalletNameSelected(name)
+        newWallet.name = name
     }
     
     func saveNewWalletCurrency(_ currency: CurrencyModel) {
-        view?.newWalletCurrencySelected(currency)
+        newWallet.currency = currency
     }
     
-    func goNextFrom(viewController: UIViewController) {
-        view?.goNextFrom(viewController: viewController)
+    func goNextFrom(index: Int) {
+        view?.goNextFrom(index: index)
     }
     
     func currencyList() {
         interactor?.currencyList()
+    }
+    
+    func createCategoriesViewController() {
+        categoryView?.categoriesViewControllerWasCreated(viewController: CategoriesListRouter.setupModule(wallet: newWallet, delegate: router as? CategoriesListDelegate))
     }
 }
 

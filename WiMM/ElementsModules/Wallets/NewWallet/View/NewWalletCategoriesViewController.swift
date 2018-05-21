@@ -11,13 +11,15 @@ import UIKit
 class NewWalletCategoriesViewController: UIViewController {
 
     // MARK: Properties
+    @IBOutlet weak var categoriesContainer: UIView!
     
     var presenter: NewWalletPresentation?
+    var index: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter?.createCategoriesViewController()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,4 +30,15 @@ class NewWalletCategoriesViewController: UIViewController {
 
 extension NewWalletCategoriesViewController: NewWalletCategoriesDelegate {
     
+    func nextButtonPressed() {
+        print("hello")
+    }
+    
+    func categoriesViewControllerWasCreated(viewController: UIViewController) {
+        add(viewController: viewController, to: categoriesContainer)
+    }
+    
+    func controllerIndex() -> Int {
+        return index
+    }
 }

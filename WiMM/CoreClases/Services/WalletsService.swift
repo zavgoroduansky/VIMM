@@ -56,15 +56,17 @@ class WalletsService {
 //        }
 //        return answer
 //    }
-//
-//    static func fetchWalletWithId(_ objectId: NSManagedObjectID) -> WalletModel? {
-//        if let wallet = CoreDataService.fetchObject(Wallets.self, withId: objectId) {
-//            return createModelClassFrom(object: wallet)
-//        } else {
-//            return nil
-//        }
-//    }
-//
+
+    static func fetchWallet(_ wallet: WalletModel, context: NSManagedObjectContext? = nil) -> WalletModel? {
+        if let walletId = wallet.id as? NSManagedObjectID {
+            let targetContext = context ?? CoreDataService.viewContext()
+            if let wallet = CoreDataService.fetchObject(Wallets.self, withId: walletId, context: targetContext) {
+                return createModelClassFrom(object: wallet)
+            }
+        }
+        return wallet
+    }
+
     static func createWallet(_ walletModel: WalletModel, context: NSManagedObjectContext? = nil) -> Wallets {
         let targetContext = context ?? CoreDataService.viewContext()
         

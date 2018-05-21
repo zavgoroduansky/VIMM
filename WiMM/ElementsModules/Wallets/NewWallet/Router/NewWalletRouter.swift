@@ -37,16 +37,19 @@ class NewWalletRouter {
         // children controllers
         let newWalletNameController = UIStoryboard(name: "NewWallet", bundle: nil).instantiateViewController(withIdentifier: "NewWalletNameViewController") as! NewWalletNameViewController
         newWalletNameController.presenter = presenter
+        newWalletNameController.index = 0
         presenter.nameView = newWalletNameController
         router.childControllers.append(newWalletNameController)
         
         let newWalletCurrencyController = UIStoryboard(name: "NewWallet", bundle: nil).instantiateViewController(withIdentifier: "NewWalletCurrencyViewController") as! NewWalletCurrencyViewController
         newWalletCurrencyController.presenter = presenter
+        newWalletCurrencyController.index = 1
         presenter.currencyView = newWalletCurrencyController
         router.childControllers.append(newWalletCurrencyController)
         
         let newWalletCategoriesController = UIStoryboard(name: "NewWallet", bundle: nil).instantiateViewController(withIdentifier: "NewWalletCategoriesViewController") as! NewWalletCategoriesViewController
         newWalletCategoriesController.presenter = presenter
+        newWalletCategoriesController.index = 2
         presenter.categoryView = newWalletCategoriesController
         router.childControllers.append(newWalletCategoriesController)
         
@@ -59,4 +62,16 @@ extension NewWalletRouter: NewWalletWireframe {
     func subViewControllers() -> [UIViewController] {
         return childControllers
     }
+}
+
+extension NewWalletRouter: CategoriesListDelegate {
+    
+    func newCategoryWasAdd(_ category: CategoryModel) {
+        
+    }
+    
+    func newCategoryWasRemoved(_ category: CategoryModel) {
+        
+    }
+    
 }

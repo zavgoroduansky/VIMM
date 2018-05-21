@@ -14,4 +14,11 @@ struct WalletModel {
     var name: String
     var currency: CurrencyModel?
     var categories: [CategoryModel]?
+    
+    mutating func addCategory(_ category: CategoryModel) {
+        if categories == nil {
+            categories = [CategoryModel]()
+        }
+        categories?.append(category)
+    }
 }

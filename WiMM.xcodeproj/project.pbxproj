@@ -17,11 +17,6 @@
 		FC0424EE2063E20600F9798E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */; };
 		FC0425092063E8D300F9798E /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425062063E8D300F9798E /* UIStoryboard.swift */; };
 		FC04250A2063E8D300F9798E /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425082063E8D300F9798E /* StoryboardLoadable.swift */; };
-		FC0425152063E8F800F9798E /* StartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04250C2063E8F800F9798E /* StartModuleViewController.swift */; };
-		FC0425162063E8F800F9798E /* StartModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04250E2063E8F800F9798E /* StartModuleRouter.swift */; };
-		FC0425172063E8F800F9798E /* StartModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425102063E8F800F9798E /* StartModuleContract.swift */; };
-		FC0425182063E8F800F9798E /* StartModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425122063E8F800F9798E /* StartModulePresenter.swift */; };
-		FC0425192063E8F800F9798E /* StartModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425142063E8F800F9798E /* StartModuleInteractor.swift */; };
 		FC04252F2063EA6500F9798E /* OperationsModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425262063EA6500F9798E /* OperationsModuleContract.swift */; };
 		FC0425302063EA6500F9798E /* OperationsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0425282063EA6500F9798E /* OperationsModulePresenter.swift */; };
 		FC0425312063EA6500F9798E /* OperationsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC04252A2063EA6500F9798E /* OperationsModuleViewController.swift */; };
@@ -61,11 +56,19 @@
 		FC15837B2072702800A823E5 /* wallets.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1583782072702800A823E5 /* wallets.png */; };
 		FC1583832072817000A823E5 /* add-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1583822072817000A823E5 /* add-icon.png */; };
 		FC158399207368B600A823E5 /* WalletsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158390207368B600A823E5 /* WalletsListInteractor.swift */; };
-		FC15839A207368B600A823E5 /* WalletsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158392207368B600A823E5 /* WalletsListViewController.swift */; };
+		FC15839A207368B600A823E5 /* WalletsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158392207368B600A823E5 /* WalletsListTableViewController.swift */; };
 		FC15839B207368B600A823E5 /* WalletsListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158394207368B600A823E5 /* WalletsListContract.swift */; };
 		FC15839C207368B600A823E5 /* WalletsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158396207368B600A823E5 /* WalletsListRouter.swift */; };
 		FC15839D207368B600A823E5 /* WalletsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC158398207368B600A823E5 /* WalletsListPresenter.swift */; };
 		FC15839F20736CC700A823E5 /* WalletsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC15839E20736CC700A823E5 /* WalletsList.storyboard */; };
+		FC1718A020935F37004EFEA4 /* CategoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17189720935F37004EFEA4 /* CategoriesListInteractor.swift */; };
+		FC1718A120935F37004EFEA4 /* CategoriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17189920935F37004EFEA4 /* CategoriesListRouter.swift */; };
+		FC1718A220935F37004EFEA4 /* CategoriesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17189B20935F37004EFEA4 /* CategoriesListTableViewController.swift */; };
+		FC1718A320935F37004EFEA4 /* CategoriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17189D20935F37004EFEA4 /* CategoriesListPresenter.swift */; };
+		FC1718A420935F37004EFEA4 /* CategoriesListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17189F20935F37004EFEA4 /* CategoriesListContract.swift */; };
+		FC1718A620935F6F004EFEA4 /* CategoriesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1718A520935F6F004EFEA4 /* CategoriesList.storyboard */; };
+		FC1718AB209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1718A9209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.swift */; };
+		FC1718AC209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1718AA209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.xib */; };
 		FC1D3189207398440015411A /* WalletsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D3188207398440015411A /* WalletsService.swift */; };
 		FC1D318C2073A2BE0015411A /* BaseEntityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D318B2073A2BE0015411A /* BaseEntityListViewController.swift */; };
 		FC1D318E2073A4670015411A /* BaseNewEntityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1D318D2073A4670015411A /* BaseNewEntityTableViewController.swift */; };
@@ -99,9 +102,15 @@
 		FC54C46B2090A20C00DD7049 /* NewWalletCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC54C46A2090A20C00DD7049 /* NewWalletCategoriesViewController.swift */; };
 		FC54C46D2090DD8E00DD7049 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC54C46C2090DD8E00DD7049 /* UIView.swift */; };
 		FC54C4732091DF5F00DD7049 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC54C4752091DF5F00DD7049 /* Localizable.strings */; };
-		FC54C4802092298D00DD7049 /* StartModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC54C4822092298D00DD7049 /* StartModule.storyboard */; };
 		FC54C48920922C5900DD7049 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC54C48720922C5900DD7049 /* Settings.storyboard */; };
 		FC62B8B1206ABE630010AD93 /* BaseNewPickerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62B8B0206ABE630010AD93 /* BaseNewPickerViewTableViewCell.swift */; };
+		FC7D386E20B2EE9700611DEB /* StartModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7D385F20B2EE9700611DEB /* StartModule.storyboard */; };
+		FC7D386F20B2EE9700611DEB /* StartModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D386220B2EE9700611DEB /* StartModuleContract.swift */; };
+		FC7D387020B2EE9700611DEB /* StartModule.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC7D386320B2EE9700611DEB /* StartModule.strings */; };
+		FC7D387120B2EE9700611DEB /* StartModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D386620B2EE9700611DEB /* StartModulePresenter.swift */; };
+		FC7D387220B2EE9700611DEB /* StartModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D386920B2EE9700611DEB /* StartModuleViewController.swift */; };
+		FC7D387320B2EE9700611DEB /* StartModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D386B20B2EE9700611DEB /* StartModuleInteractor.swift */; };
+		FC7D387420B2EE9700611DEB /* StartModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D386D20B2EE9700611DEB /* StartModuleRouter.swift */; };
 		FCA60E2A206AC49700234EF8 /* BaseNewSelectableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA60E29206AC49700234EF8 /* BaseNewSelectableTableViewCell.swift */; };
 		FCA60E2C206B892400234EF8 /* BaseNewDatePickerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA60E2B206B892400234EF8 /* BaseNewDatePickerViewTableViewCell.swift */; };
 		FCA60E2E206B8A6300234EF8 /* BaseNewDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA60E2D206B8A6300234EF8 /* BaseNewDescriptionTableViewCell.swift */; };
@@ -142,11 +151,6 @@
 		FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FC0425062063E8D300F9798E /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		FC0425082063E8D300F9798E /* StoryboardLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
-		FC04250C2063E8F800F9798E /* StartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleViewController.swift; sourceTree = "<group>"; };
-		FC04250E2063E8F800F9798E /* StartModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleRouter.swift; sourceTree = "<group>"; };
-		FC0425102063E8F800F9798E /* StartModuleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleContract.swift; sourceTree = "<group>"; };
-		FC0425122063E8F800F9798E /* StartModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModulePresenter.swift; sourceTree = "<group>"; };
-		FC0425142063E8F800F9798E /* StartModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleInteractor.swift; sourceTree = "<group>"; };
 		FC0425262063EA6500F9798E /* OperationsModuleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleContract.swift; sourceTree = "<group>"; };
 		FC0425282063EA6500F9798E /* OperationsModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModulePresenter.swift; sourceTree = "<group>"; };
 		FC04252A2063EA6500F9798E /* OperationsModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsModuleViewController.swift; sourceTree = "<group>"; };
@@ -186,11 +190,19 @@
 		FC1583782072702800A823E5 /* wallets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallets.png; sourceTree = "<group>"; };
 		FC1583822072817000A823E5 /* add-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-icon.png"; sourceTree = "<group>"; };
 		FC158390207368B600A823E5 /* WalletsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListInteractor.swift; sourceTree = "<group>"; };
-		FC158392207368B600A823E5 /* WalletsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListViewController.swift; sourceTree = "<group>"; };
+		FC158392207368B600A823E5 /* WalletsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListTableViewController.swift; sourceTree = "<group>"; };
 		FC158394207368B600A823E5 /* WalletsListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListContract.swift; sourceTree = "<group>"; };
 		FC158396207368B600A823E5 /* WalletsListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListRouter.swift; sourceTree = "<group>"; };
 		FC158398207368B600A823E5 /* WalletsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListPresenter.swift; sourceTree = "<group>"; };
 		FC15839E20736CC700A823E5 /* WalletsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletsList.storyboard; sourceTree = "<group>"; };
+		FC17189720935F37004EFEA4 /* CategoriesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListInteractor.swift; sourceTree = "<group>"; };
+		FC17189920935F37004EFEA4 /* CategoriesListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListRouter.swift; sourceTree = "<group>"; };
+		FC17189B20935F37004EFEA4 /* CategoriesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListTableViewController.swift; sourceTree = "<group>"; };
+		FC17189D20935F37004EFEA4 /* CategoriesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListPresenter.swift; sourceTree = "<group>"; };
+		FC17189F20935F37004EFEA4 /* CategoriesListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListContract.swift; sourceTree = "<group>"; };
+		FC1718A520935F6F004EFEA4 /* CategoriesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoriesList.storyboard; sourceTree = "<group>"; };
+		FC1718A9209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityListActionTableViewCell.swift; sourceTree = "<group>"; };
+		FC1718AA209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseEntityListActionTableViewCell.xib; sourceTree = "<group>"; };
 		FC1D3188207398440015411A /* WalletsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsService.swift; sourceTree = "<group>"; };
 		FC1D318B2073A2BE0015411A /* BaseEntityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityListViewController.swift; sourceTree = "<group>"; };
 		FC1D318D2073A4670015411A /* BaseNewEntityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNewEntityTableViewController.swift; sourceTree = "<group>"; };
@@ -225,11 +237,17 @@
 		FC54C46C2090DD8E00DD7049 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FC54C4742091DF5F00DD7049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FC54C4762091DF6300DD7049 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FC54C48D20922D2800DD7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartModule.storyboard; sourceTree = "<group>"; };
-		FC54C48F20922D7100DD7049 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/StartModule.strings; sourceTree = "<group>"; };
 		FC54C49020922DA800DD7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		FC54C49120922DB400DD7049 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Settings.strings; sourceTree = "<group>"; };
 		FC62B8B0206ABE630010AD93 /* BaseNewPickerViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNewPickerViewTableViewCell.swift; sourceTree = "<group>"; };
+		FC7D386020B2EE9700611DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/StartModule.storyboard; sourceTree = "<group>"; };
+		FC7D386220B2EE9700611DEB /* StartModuleContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleContract.swift; sourceTree = "<group>"; };
+		FC7D386420B2EE9700611DEB /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/StartModule.strings; sourceTree = "<group>"; };
+		FC7D386620B2EE9700611DEB /* StartModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModulePresenter.swift; sourceTree = "<group>"; };
+		FC7D386720B2EE9700611DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartModule.storyboard; sourceTree = "<group>"; };
+		FC7D386920B2EE9700611DEB /* StartModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleViewController.swift; sourceTree = "<group>"; };
+		FC7D386B20B2EE9700611DEB /* StartModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleInteractor.swift; sourceTree = "<group>"; };
+		FC7D386D20B2EE9700611DEB /* StartModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModuleRouter.swift; sourceTree = "<group>"; };
 		FCA60E29206AC49700234EF8 /* BaseNewSelectableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNewSelectableTableViewCell.swift; sourceTree = "<group>"; };
 		FCA60E2B206B892400234EF8 /* BaseNewDatePickerViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNewDatePickerViewTableViewCell.swift; sourceTree = "<group>"; };
 		FCA60E2D206B8A6300234EF8 /* BaseNewDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNewDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -311,19 +329,6 @@
 			path = WiMMUITests;
 			sourceTree = "<group>";
 		};
-		FC0424E22063DD3A00F9798E /* StartModule */ = {
-			isa = PBXGroup;
-			children = (
-				FC04250F2063E8F800F9798E /* Contract */,
-				FC0425132063E8F800F9798E /* Interactor */,
-				FC0425112063E8F800F9798E /* Presenter */,
-				FC04250D2063E8F800F9798E /* Router */,
-				FC04250B2063E8F800F9798E /* View */,
-				FC54C4822092298D00DD7049 /* StartModule.storyboard */,
-			);
-			path = StartModule;
-			sourceTree = "<group>";
-		};
 		FC0425052063E8D300F9798E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,46 +345,6 @@
 				FC0425082063E8D300F9798E /* StoryboardLoadable.swift */,
 			);
 			path = ProtocolExtensions;
-			sourceTree = "<group>";
-		};
-		FC04250B2063E8F800F9798E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FC04250C2063E8F800F9798E /* StartModuleViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FC04250D2063E8F800F9798E /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				FC04250E2063E8F800F9798E /* StartModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		FC04250F2063E8F800F9798E /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				FC0425102063E8F800F9798E /* StartModuleContract.swift */,
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
-		FC0425112063E8F800F9798E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				FC0425122063E8F800F9798E /* StartModulePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		FC0425132063E8F800F9798E /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				FC0425142063E8F800F9798E /* StartModuleInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		FC0425242063EA6500F9798E /* OperationsModule */ = {
@@ -716,7 +681,7 @@
 		FC158391207368B600A823E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC158392207368B600A823E5 /* WalletsListViewController.swift */,
+				FC158392207368B600A823E5 /* WalletsListTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -745,6 +710,68 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FC17189520935EFC004EFEA4 /* CategoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189E20935F37004EFEA4 /* Contract */,
+				FC17189620935F37004EFEA4 /* Interactor */,
+				FC17189C20935F37004EFEA4 /* Presenter */,
+				FC17189820935F37004EFEA4 /* Router */,
+				FC17189A20935F37004EFEA4 /* View */,
+				FC1718A520935F6F004EFEA4 /* CategoriesList.storyboard */,
+			);
+			path = CategoriesList;
+			sourceTree = "<group>";
+		};
+		FC17189620935F37004EFEA4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189720935F37004EFEA4 /* CategoriesListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC17189820935F37004EFEA4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189920935F37004EFEA4 /* CategoriesListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FC17189A20935F37004EFEA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189B20935F37004EFEA4 /* CategoriesListTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC17189C20935F37004EFEA4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189D20935F37004EFEA4 /* CategoriesListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC17189E20935F37004EFEA4 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				FC17189F20935F37004EFEA4 /* CategoriesListContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		FC1718AD209B0CC4004EFEA4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FC1718A9209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.swift */,
+				FC1718AA209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FC1D3187207398280015411A /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +796,7 @@
 			isa = PBXGroup;
 			children = (
 				FC1D318B2073A2BE0015411A /* BaseEntityListViewController.swift */,
+				FC1718AD209B0CC4004EFEA4 /* Cells */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -832,10 +860,10 @@
 		FC54C443208A332500DD7049 /* MainScreensModules */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D385E20B2EE9700611DEB /* StartModule */,
 				FC0424ED2063E20600F9798E /* MainTabBarViewController.swift */,
 				FC1583612072625700A823E5 /* Settings */,
 				FC0425422064380A00F9798E /* Operations */,
-				FC0424E22063DD3A00F9798E /* StartModule */,
 			);
 			path = MainScreensModules;
 			sourceTree = "<group>";
@@ -868,6 +896,7 @@
 		FC54C446208A33E300DD7049 /* ReusableModules */ = {
 			isa = PBXGroup;
 			children = (
+				FC17189520935EFC004EFEA4 /* CategoriesList */,
 				FC0425392063F29100F9798E /* WalletsCollection */,
 				FC0425242063EA6500F9798E /* OperationsModule */,
 			);
@@ -962,6 +991,60 @@
 				FC54C4752091DF5F00DD7049 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		FC7D385E20B2EE9700611DEB /* StartModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D385F20B2EE9700611DEB /* StartModule.storyboard */,
+				FC7D386120B2EE9700611DEB /* Contract */,
+				FC7D386320B2EE9700611DEB /* StartModule.strings */,
+				FC7D386520B2EE9700611DEB /* Presenter */,
+				FC7D386820B2EE9700611DEB /* View */,
+				FC7D386A20B2EE9700611DEB /* Interactor */,
+				FC7D386C20B2EE9700611DEB /* Router */,
+			);
+			path = StartModule;
+			sourceTree = "<group>";
+		};
+		FC7D386120B2EE9700611DEB /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D386220B2EE9700611DEB /* StartModuleContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		FC7D386520B2EE9700611DEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D386620B2EE9700611DEB /* StartModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FC7D386820B2EE9700611DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D386920B2EE9700611DEB /* StartModuleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC7D386A20B2EE9700611DEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D386B20B2EE9700611DEB /* StartModuleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC7D386C20B2EE9700611DEB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D386D20B2EE9700611DEB /* StartModuleRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		FCB20CB9207F9261009BCD81 /* Constants */ = {
@@ -1080,6 +1163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1718A620935F6F004EFEA4 /* CategoriesList.storyboard in Resources */,
 				FC1D319F207510210015411A /* BaseNewSelectableTableViewCell.xib in Resources */,
 				FC1D319920750C780015411A /* BaseNewDescriptionTableViewCell.xib in Resources */,
 				FC0425372063F10000F9798E /* OperationsModule.storyboard in Resources */,
@@ -1087,20 +1171,22 @@
 				FC04255D20643BE500F9798E /* Operations.storyboard in Resources */,
 				FC0424BB2063DA4000F9798E /* LaunchScreen.storyboard in Resources */,
 				FC54C48920922C5900DD7049 /* Settings.storyboard in Resources */,
+				FC7D386E20B2EE9700611DEB /* StartModule.storyboard in Resources */,
 				FC409A8620873DAF00491701 /* CurrenciesList.plist in Resources */,
 				FC1583832072817000A823E5 /* add-icon.png in Resources */,
 				FC1D3197207504E90015411A /* NewOperation.storyboard in Resources */,
 				FC15837A2072702800A823E5 /* currencies.png in Resources */,
 				FC54C4732091DF5F00DD7049 /* Localizable.strings in Resources */,
-				FC54C4802092298D00DD7049 /* StartModule.storyboard in Resources */,
 				FC1D319D20750F950015411A /* BaseNewDatePickerViewTableViewCell.xib in Resources */,
 				FC0424B82063DA4000F9798E /* Assets.xcassets in Resources */,
 				FC54C4652090976800DD7049 /* NewWallet.storyboard in Resources */,
 				FC0424B32063DA4000F9798E /* Main.storyboard in Resources */,
 				FC15837B2072702800A823E5 /* wallets.png in Resources */,
 				FC1D319B20750D900015411A /* BaseNewPickerViewTableViewCell.xib in Resources */,
+				FC1718AC209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.xib in Resources */,
 				FC04253D2063F36700F9798E /* WalletsCollection.storyboard in Resources */,
 				FC15839F20736CC700A823E5 /* WalletsList.storyboard in Resources */,
+				FC7D387020B2EE9700611DEB /* StartModule.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,6 +1219,8 @@
 				FC1D31A120765A0C0015411A /* CategoryService.swift in Sources */,
 				FC1D31BD2077B8B40015411A /* Currencies+CoreDataClass.swift in Sources */,
 				FC15839D207368B600A823E5 /* WalletsListPresenter.swift in Sources */,
+				FC1718A420935F37004EFEA4 /* CategoriesListContract.swift in Sources */,
+				FC1718A020935F37004EFEA4 /* CategoriesListInteractor.swift in Sources */,
 				FC1D31C22077B93E0015411A /* CategoryModel.swift in Sources */,
 				FC0425322063EA6500F9798E /* OperationsModuleInteractor.swift in Sources */,
 				FC04252F2063EA6500F9798E /* OperationsModuleContract.swift in Sources */,
@@ -1140,20 +1228,21 @@
 				FC158399207368B600A823E5 /* WalletsListInteractor.swift in Sources */,
 				FC1D31C42077C0A30015411A /* CurrencyService.swift in Sources */,
 				FC0425A020654AA700F9798E /* NewOperationInteractor.swift in Sources */,
+				FC1718A120935F37004EFEA4 /* CategoriesListRouter.swift in Sources */,
 				FC1D3189207398440015411A /* WalletsService.swift in Sources */,
 				FC0425312063EA6500F9798E /* OperationsModuleViewController.swift in Sources */,
 				FCA60E2A206AC49700234EF8 /* BaseNewSelectableTableViewCell.swift in Sources */,
 				FC15836F2072625700A823E5 /* SettingsInteractor.swift in Sources */,
 				FC0425092063E8D300F9798E /* UIStoryboard.swift in Sources */,
-				FC0425152063E8F800F9798E /* StartModuleViewController.swift in Sources */,
 				FC042559206438FB00F9798E /* OperationsTablePresenter.swift in Sources */,
 				FC04255B206438FB00F9798E /* OperationsViewController.swift in Sources */,
 				FC04250A2063E8D300F9798E /* StoryboardLoadable.swift in Sources */,
 				FCB20CBB207F9279009BCD81 /* Constants.swift in Sources */,
 				FC04253B2063F2C400F9798E /* WalletsCollectionViewController.swift in Sources */,
 				FC62B8B1206ABE630010AD93 /* BaseNewPickerViewTableViewCell.swift in Sources */,
+				FC7D387220B2EE9700611DEB /* StartModuleViewController.swift in Sources */,
 				FC54C4612090970400DD7049 /* NewWalletPresenter.swift in Sources */,
-				FC15839A207368B600A823E5 /* WalletsListViewController.swift in Sources */,
+				FC15839A207368B600A823E5 /* WalletsListTableViewController.swift in Sources */,
 				FC54C45F2090970400DD7049 /* NewWalletContract.swift in Sources */,
 				FC0425302063EA6500F9798E /* OperationsModulePresenter.swift in Sources */,
 				FC15836D2072625700A823E5 /* SettingsPresenter.swift in Sources */,
@@ -1162,6 +1251,8 @@
 				FC042579206447C200F9798E /* WalletsCollectionRouter.swift in Sources */,
 				FC04259F20654AA700F9798E /* NewOperationViewController.swift in Sources */,
 				FC1D31B02077AA820015411A /* CoreDataService.swift in Sources */,
+				FC1718A220935F37004EFEA4 /* CategoriesListTableViewController.swift in Sources */,
+				FC7D387420B2EE9700611DEB /* StartModuleRouter.swift in Sources */,
 				FC54C44220878FCA00DD7049 /* FileManager.swift in Sources */,
 				FC04259D20654AA700F9798E /* NewOperationContract.swift in Sources */,
 				FC1D31AD207782930015411A /* Wallets+CoreDataClass.swift in Sources */,
@@ -1172,6 +1263,7 @@
 				FC04257F20644EBD00F9798E /* UIViewController.swift in Sources */,
 				FC54C4672090A1F000DD7049 /* NewWalletNameViewController.swift in Sources */,
 				FC54C4692090A1FE00DD7049 /* NewWalletCurrencyViewController.swift in Sources */,
+				FC1718A320935F37004EFEA4 /* CategoriesListPresenter.swift in Sources */,
 				FC0424EE2063E20600F9798E /* MainTabBarViewController.swift in Sources */,
 				FC042557206438FB00F9798E /* OperationsTableInteractor.swift in Sources */,
 				FC04256220643E6900F9798E /* OperationsTableCellModel.swift in Sources */,
@@ -1180,23 +1272,23 @@
 				FC15839C207368B600A823E5 /* WalletsListRouter.swift in Sources */,
 				FC54C4602090970400DD7049 /* NewWalletInteractor.swift in Sources */,
 				FC0425A6206558CF00F9798E /* NewOperationModel.swift in Sources */,
-				FC0425182063E8F800F9798E /* StartModulePresenter.swift in Sources */,
 				FC0424B62063DA4000F9798E /* WiMM.xcdatamodeld in Sources */,
+				FC7D387120B2EE9700611DEB /* StartModulePresenter.swift in Sources */,
 				FC0424AE2063DA4000F9798E /* AppDelegate.swift in Sources */,
 				FC04257A206447C200F9798E /* WalletsCollectionPresenter.swift in Sources */,
-				FC0425192063E8F800F9798E /* StartModuleInteractor.swift in Sources */,
 				FC54C46B2090A20C00DD7049 /* NewWalletCategoriesViewController.swift in Sources */,
-				FC0425172063E8F800F9798E /* StartModuleContract.swift in Sources */,
 				FC04255A206438FB00F9798E /* OperationsTableRouter.swift in Sources */,
 				FC15839B207368B600A823E5 /* WalletsListContract.swift in Sources */,
 				FC15836E2072625700A823E5 /* SettingsViewController.swift in Sources */,
-				FC0425162063E8F800F9798E /* StartModuleRouter.swift in Sources */,
 				FC04259E20654AA700F9798E /* NewOperationPresenter.swift in Sources */,
+				FC7D387320B2EE9700611DEB /* StartModuleInteractor.swift in Sources */,
 				FC1D31A420777FB60015411A /* WalletModel.swift in Sources */,
 				FC0425412063F84C00F9798E /* WalletsCollectionViewCell.swift in Sources */,
 				FC04255F20643C4300F9798E /* OperationsTableViewCell.swift in Sources */,
+				FC7D386F20B2EE9700611DEB /* StartModuleContract.swift in Sources */,
 				FC042577206447C200F9798E /* WalletsCollectionInteractor.swift in Sources */,
 				FC1D31C62077C0D20015411A /* CurrencyModel.swift in Sources */,
+				FC1718AB209B0CB7004EFEA4 /* BaseEntityListActionTableViewCell.swift in Sources */,
 				FC1D31AE207782930015411A /* Wallets+CoreDataProperties.swift in Sources */,
 				FC0425A120654AA700F9798E /* NewOperationRouter.swift in Sources */,
 				FCA60E2C206B892400234EF8 /* BaseNewDatePickerViewTableViewCell.swift in Sources */,
@@ -1261,15 +1353,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		FC54C4822092298D00DD7049 /* StartModule.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC54C48D20922D2800DD7049 /* Base */,
-				FC54C48F20922D7100DD7049 /* uk */,
-			);
-			name = StartModule.storyboard;
-			sourceTree = "<group>";
-		};
 		FC54C48720922C5900DD7049 /* Settings.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1277,6 +1360,23 @@
 				FC54C49120922DB400DD7049 /* uk */,
 			);
 			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		FC7D385F20B2EE9700611DEB /* StartModule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7D386020B2EE9700611DEB /* en */,
+				FC7D386720B2EE9700611DEB /* Base */,
+			);
+			name = StartModule.storyboard;
+			sourceTree = "<group>";
+		};
+		FC7D386320B2EE9700611DEB /* StartModule.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7D386420B2EE9700611DEB /* uk */,
+			);
+			name = StartModule.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

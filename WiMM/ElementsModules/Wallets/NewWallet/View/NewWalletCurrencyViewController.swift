@@ -20,6 +20,7 @@ class NewWalletCurrencyViewController: UIViewController {
         }
     }
     var presenter: NewWalletPresentation?
+    var index: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,6 @@ class NewWalletCurrencyViewController: UIViewController {
 
     // MARK: actions
     
-    @objc func rightNavigationBarButtonAction(_ sender: UIBarButtonItem) {
-        if let currency = selectedCurrency {
-            // need to show next controller
-            presenter?.saveNewWalletCurrency(currency)
-            presenter?.goNextFrom(viewController: self)
-        } else {
-            currencyButton.shake()
-        }
-    }
-    
     @IBAction func currencyButtonAction(_ sender: UIButton) {
         presenter?.currencyList()
     }
@@ -51,9 +42,6 @@ class NewWalletCurrencyViewController: UIViewController {
     // MARK: Private
     
     private func handleViewElements() {
-        // navigation
-        parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Navigation.rightButtonTitle, style: .plain, target: self, action: #selector(rightNavigationBarButtonAction))
-        
         // currency
         handleCurrencySelection(currency: selectedCurrency)
         
@@ -80,6 +68,16 @@ class NewWalletCurrencyViewController: UIViewController {
 
 extension NewWalletCurrencyViewController: NewWalletCurrencyDelegate {
     
+    func nextButtonPressed() {
+        if let currency = selectedCurrency {
+            // need to show next controller
+            presenter?.saveNewWalletCurrency(currency)
+            presenter?.goNextFrom(index: index)
+        } else {
+            currencyButton.shake()
+        }
+    }
+    
     func onCurrencyList(_ list: [CurrencyModel]) {
         let alert = UIAlertController(title: NSLocalizedString("NewWalletCurrencySelectTitle", comment: ""), message: NSLocalizedString("NewWalletCurrencySelectDescription", comment: ""), preferredStyle: .actionSheet)
         for currency in list {
@@ -89,5 +87,9 @@ extension NewWalletCurrencyViewController: NewWalletCurrencyDelegate {
         }
         alert.addAction(UIAlertAction(title: NSLocalizedString("CloseButtonTitle", comment: ""), style: .destructive, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func controllerIndex() -> Int {
+        return index
     }
 }

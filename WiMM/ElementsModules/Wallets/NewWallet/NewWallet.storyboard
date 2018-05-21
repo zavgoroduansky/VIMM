@@ -80,14 +80,28 @@
                     <view key="view" contentMode="scaleToFill" id="JUX-Jf-r9I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-GJ-Zp3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WoM-GJ-Zp3" secondAttribute="bottom" id="PsG-5z-VjM"/>
+                            <constraint firstItem="WoM-GJ-Zp3" firstAttribute="trailing" secondItem="G3u-sb-l3Q" secondAttribute="trailing" id="V06-Q6-4e0"/>
+                            <constraint firstItem="WoM-GJ-Zp3" firstAttribute="leading" secondItem="G3u-sb-l3Q" secondAttribute="leading" id="YPO-hC-eFX"/>
+                            <constraint firstItem="WoM-GJ-Zp3" firstAttribute="top" secondItem="G3u-sb-l3Q" secondAttribute="top" id="jT8-xC-3NI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G3u-sb-l3Q"/>
                     </view>
                     <navigationItem key="navigationItem" id="aUb-GS-JS2"/>
+                    <connections>
+                        <outlet property="categoriesContainer" destination="WoM-GJ-Zp3" id="qVA-pc-kK2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vd-td-SDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="826"/>
+            <point key="canvasLocation" x="1792.8" y="825.3694581280788"/>
         </scene>
         <!--New Wallet Name View Controller-->
         <scene sceneID="f5A-Im-6UC">

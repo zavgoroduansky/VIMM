@@ -14,7 +14,6 @@ class NewWalletViewController: UIPageViewController, StoryboardLoadable {
     // MARK: Properties
     var subViewControllers = [UIViewController]()
     var pageControl = UIPageControl()
-    lazy var newWallet = WalletModel(id: nil, name: "Default", currency: nil, categories: nil)
 
     var presenter: NewWalletPresentation?
 
@@ -27,10 +26,23 @@ class NewWalletViewController: UIPageViewController, StoryboardLoadable {
         self.dataSource = self
 
         presenter?.subViewControllers()
-        title = NSLocalizedString("NewWalletTitle", comment: "")
+        
+        handleViewElements()
+    }
+    
+    // MARK: actions
+    
+    @objc func rightNavigationBarButtonAction(_ sender: UIBarButtonItem) {
+        presenter?.nextButtonPressedOnViewControllerWith(index: pageControl.currentPage)
     }
     
     // MARK: Private
+    
+    private func handleViewElements() {
+        title = NSLocalizedString("NewWalletTitle", comment: "")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("NextButtonTitle", comment: ""), style: .plain, target: self, action: #selector(rightNavigationBarButtonAction))
+    }
     
     private func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
@@ -62,22 +74,9 @@ extension NewWalletViewController: NewWalletView {
         }
     }
     
-    func newWalletNameSelected(_ name: String) {
-        newWallet.name = name
-    }
-    
-    func newWalletCurrencySelected(_ currency: CurrencyModel) {
-        newWallet.currency = currency
-    }
-    
-    func newWalletCategoriesSelected(_ categories: [CategoryModel]) {
-        
-    }
-    
-    func goNextFrom(viewController: UIViewController) {
-        let currentIndex = subViewControllers.index(of: viewController) ?? 0
-        if currentIndex < subViewControllers.count-1 {
-            showViewControllerWithIndex(currentIndex+1)
+    func goNextFrom(index: Int) {
+        if index < subViewControllers.count-1 {
+            showViewControllerWithIndex(index+1)
         }
     }
 }

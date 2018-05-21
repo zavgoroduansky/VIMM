@@ -16,6 +16,7 @@ class NewWalletNameViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var presenter: NewWalletPresentation?
+    var index: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,27 +34,10 @@ class NewWalletNameViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: actions
-    
-    @objc func rightNavigationBarButtonAction(_ sender: UIBarButtonItem) {
-        if let walletName = nameTextField.text {
-            if walletName.count == 0 {
-                nameTextField.shake()
-            } else {
-                presenter?.checkNewWalletName(walletName)
-            }
-        } else {
-            nameTextField.shake()
-        }
-    }
 
     // MARK: Private
     
     private func handleViewElements() {
-        // navigation
-        parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Navigation.rightButtonTitle, style: .plain, target: self, action: #selector(rightNavigationBarButtonAction))
-        
         // text field
         nameTextField.font = Constants.Fonts.selectedText
         
@@ -66,6 +50,18 @@ class NewWalletNameViewController: UIViewController {
 
 extension NewWalletNameViewController: NewWalletNameDelegate {
     
+    func nextButtonPressed() {
+        if let walletName = nameTextField.text {
+            if walletName.count == 0 {
+                nameTextField.shake()
+            } else {
+                presenter?.checkNewWalletName(walletName)
+            }
+        } else {
+            nameTextField.shake()
+        }
+    }
+    
     func newWalletNameCheckedWith(errorString: String) {
         nameTextField.shake()
         // need to show error
@@ -77,6 +73,10 @@ extension NewWalletNameViewController: NewWalletNameDelegate {
     func newWalletNameCheckSuccess() {
         // need to show next controller
         presenter?.saveNewWalletName(nameTextField.text!)
-        presenter?.goNextFrom(viewController: self)
+        presenter?.goNextFrom(index: index)
+    }
+    
+    func controllerIndex() -> Int {
+        return index
     }
 }

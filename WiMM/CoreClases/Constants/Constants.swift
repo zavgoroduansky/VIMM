@@ -26,7 +26,4 @@ struct Constants {
     struct Colors {
         static let infoText = UIColor(red: 60/255, green: 60/255, blue: 60/255, alpha: 1)
     }
-    struct Navigation {
-        static let rightButtonTitle = "Next"
-    }
 }

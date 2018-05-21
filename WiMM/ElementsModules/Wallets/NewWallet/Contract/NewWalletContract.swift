@@ -11,36 +11,42 @@ import UIKit
 
 protocol NewWalletNameDelegate: class {
     
+    func nextButtonPressed()
     func newWalletNameCheckedWith(errorString: String)
     func newWalletNameCheckSuccess()
+    func controllerIndex() -> Int
 }
 
 protocol NewWalletCurrencyDelegate: class {
     
+    func nextButtonPressed()
     func onCurrencyList(_ list: [CurrencyModel])
+    func controllerIndex() -> Int
 }
 
 protocol NewWalletCategoriesDelegate: class {
     
+    func nextButtonPressed()
+    func categoriesViewControllerWasCreated(viewController: UIViewController)
+    func controllerIndex() -> Int
 }
 
 protocol NewWalletView: class {
     
     func onSubViewControllers(_ array: [UIViewController])
-    func newWalletNameSelected(_ name: String)
-    func newWalletCurrencySelected(_ currency: CurrencyModel)
-    func newWalletCategoriesSelected(_ categories: [CategoryModel])
-    func goNextFrom(viewController: UIViewController)
+    func goNextFrom(index: Int)
 }
 
 protocol NewWalletPresentation: class {
     
+    func nextButtonPressedOnViewControllerWith(index: Int)
     func subViewControllers()
     func checkNewWalletName(_ name: String)
     func saveNewWalletName(_ name: String)
     func saveNewWalletCurrency(_ currency: CurrencyModel)
-    func goNextFrom(viewController: UIViewController)
+    func goNextFrom(index: Int)
     func currencyList()
+    func createCategoriesViewController()
 }
 
 protocol NewWalletUseCase: class {

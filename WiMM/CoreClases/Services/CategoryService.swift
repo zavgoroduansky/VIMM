@@ -31,16 +31,32 @@ class CategoryService {
         return nil
     }
     
-//    static func fetchCategoryFor(walletId: NSManagedObjectID) -> [CategoryModel] {
-//        var categories = [CategoryModel]()
-//        if let wallet = WalletsService.fetchWalletWithId(walletId), let walletCategories = wallet.categories {
-//            for object in walletCategories {
-//                categories.append(object)
-//            }
-//        }
-//        return categories
-//    }
-//
+    static func fetchCategoryFor(wallet: WalletModel, context: NSManagedObjectContext? = nil) -> [CategoryModel] {
+        var categories = [CategoryModel]()
+        if let wallet = WalletsService.fetchWallet(wallet), let walletCategories = wallet.categories {
+            for object in walletCategories {
+                categories.append(object)
+            }
+        }
+        return categories
+    }
+
+    static func addNewCategory(name: String, wallet: inout WalletModel, context: NSManagedObjectContext? = nil) -> CategoryModel? {
+        // need to check unic new category name
+        guard name.count > 0 else {
+            return nil
+        }
+        let categories = fetchCategoryFor(wallet: wallet, context: context)
+        for category in categories {
+            if category.name == name {
+                return nil
+            }
+        }
+        let newCategory = CategoryModel(id: nil, name: name)
+        wallet.addCategory(newCategory)
+        return newCategory
+    }
+    
 //    static func fetchCategoryWith(id: NSManagedObjectID) -> CategoryModel? {
 //        if let category = CoreDataService.fetchObject(Categories.self, withId: id) {
 //            return createModelClassFrom(object: category)
